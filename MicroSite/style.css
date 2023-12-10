@@ -127,3 +127,10 @@ ul {
         background-position: 0% 2%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80vw;
+        height: 180vw;
+    }
+}
