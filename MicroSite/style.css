@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #cecece;
+}
+
+p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+ul {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    height: 70%;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: blur(5px);
+    background: rgba(58, 53, 53, 0.137);
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.137);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info {
+    flex: 1;
+    margin-left: 0.6rem;
+}
+
+.logo {
+    width: 10vw;
+    height: 10vw;
+    justify-self: end;
+}
+
+.container .about-me {
+    max-width: 40rem;
+    word-wrap: break-word;
+}
+
+.section {
+    padding: 0.6rem;
+}
+
+.container .title .info {
+    padding-right: 0.6rem;
+}
+
+.container .title h1 {
+    font-size: 2rem;
+    color: #e0e0e0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.container .projects a {
+    color: white; /* Set the color of the link to white */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.container .icon {
+    margin-top: 0.2rem;
+    color: white;
+    padding-right: 0.2rem;
+}
+
+.skill ul {
+    padding-left: 1.6rem;
+}
+
+.faded {
+    opacity: 0.7;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(59deg, #000000, #40d4ae, #000000);
+    background-size: 600% 600%;
+    animation: AnimationName 8s ease infinite;
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 2%;
+    }
+    50% {
+        background-position: 100% 99%;
+    }
+    100% {
+        background-position: 0% 2%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80vw;
+        height: 180vw;
+    }
+}
