@@ -9,6 +9,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body .sections .container::-webkit-scrollbar {
+    display: none;
+
+}
 h1 {
     font-size: 2rem;
     color: #e0e0e0;
@@ -132,5 +136,13 @@ ul {
     .container {
         width: 80vw;
         height: 180vw;
+        /*overflow: scroll;*/
+    }
+}
+
+@media only screen and (max-height: 811px) {
+    .sections {
+      
+        overflow: scroll;
     }
 }
