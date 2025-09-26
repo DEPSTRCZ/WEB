@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: rgb(38,90,172);
+            background: radial-gradient(circle, rgba(38,90,172,1) 0%, rgba(0,0,0,1) 78%);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .card {
+            border: 1px solid none;
+            border-radius: 0 1rem 0 1rem ;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            overflow: hidden;
+        }
+
+        .section1 {
+            background-color: white;
+            width: 10rem;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .section2 {
+            width: 10rem;
+            height: 15rem;
+            background: rgba(67, 67, 67, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+        }
+        .button {
+            background-color: white;
+            color: black; /* Optionally, set the text color to ensure visibility */
+            padding: 0.5rem 2rem; /* Adjust padding as needed */
+            border: none; /* Optional border for better visibility */
+            border-radius: 0.5rem;
+        }
+
+    </style>
+    <script src="main.js"></script>
+    <title>Karta</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="section1">
+                <h1>Tvoříte WAP?</h1>
+                <p>Jiří Edelmann 2ITB</p>
+            </div>
+            <div class="section2">
+                <input type="radio" id="yes" name="odpoved" value="">
+                <label for="yes">Ano</label><br>
+        
+                <input type="radio" id="no" name="odpoved" value="">
+                <label for="no">Ne</label><br>
+        
+                <input type="radio" id="nemohu" name="odpoved" value="">
+                <label for="cantTell">Nemohu říci</label><br>
+                <button class="button" type="button">Odpovědět</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

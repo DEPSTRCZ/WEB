@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a3737;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column wrap;
+    flex-direction: row;
+
+
+}
